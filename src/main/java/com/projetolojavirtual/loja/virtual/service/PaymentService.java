@@ -7,11 +7,18 @@ import org.springframework.stereotype.Service;
 @Service
 public class PaymentService {
 
-    public boolean processPayment(Payment payment) {
-        // Simulação do processamento de pagamento
-        if (payment.getMethod().equals("pix") || payment.getMethod().equals("credit_card") || payment.getMethod().equals("debit_card")) {
-            return true;
-        }
-        return false;
+    public String processarPagamentoPix(PagamentoRequest pagamentoRequest) {
+        // Lógica para processar pagamento via PIX
+        return "Pagamento via PIX processado com sucesso!";
+    }
+
+    public String processarPagamentoCartaoCredito(PagamentoRequest pagamentoRequest) {
+        // Lógica para processar pagamento via cartão de crédito
+        return "Pagamento via Cartão de Crédito processado com sucesso!";
+    }
+
+    public String processarPagamentoCartaoDebito(PagamentoRequest pagamentoRequest) {
+        // Lógica para processar pagamento via cartão de débito
+        return "Pagamento via Cartão de Débito processado com sucesso!";
     }
 }

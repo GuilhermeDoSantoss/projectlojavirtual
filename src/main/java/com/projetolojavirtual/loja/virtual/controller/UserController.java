@@ -1,7 +1,6 @@
 package com.projetolojavirtual.loja.virtual.controller;
 
-import com.loja.virtual.model.User;
-import com.loja.virtual.service.UserService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
