@@ -1,4 +1,4 @@
-package com.projetolojavirtual.loja.virtual.request;
+package com.projetolojavirtual.loja.virtual.controller.request;
 
 public class PaymentRequest {
     private String metodoPagamento;
